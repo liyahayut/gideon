@@ -26,7 +26,7 @@ def main():
 def process_command(command):
     if not command:
         return
-    if "time" in command:
+    elif "time" in command:
         now = datetime.datetime.now().strftime("%H:%M")
         speak(f"The current time is {now}.")
     elif "date" in command:
